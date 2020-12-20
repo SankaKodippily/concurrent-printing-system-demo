@@ -1,16 +1,3 @@
-# Concurrent Printing System - Demo
-
-Demonstration of a concurrent printing system, that has several students that share a printer to print documents, and two technicians that refill it with paper and toner cartridges.
-
-Contents:
-* Java Code [PrintingSystem](src/PrintingSystem.java)
-* FSP Processes ([`Printer.lts`](Printer.lts))
-
-The Java code for demonstration uses Re-entrant Locks. [PrintingSystem](src/PrintingSystem.java) class has the main method, which can be used to run the demo.
-
-The corresponding FSP processes are as follows: 
-
-```javascript
 const MAX_SHEETS = 3 // Maximum number of sheets in a printer
 
 set PRINT_ACTIONS = {acquirePrint, print, acquireRefill, refill, release}
@@ -37,9 +24,3 @@ TECHNICIAN = (
 ) + PRINT_ACTIONS.
 
 ||PRINTING_SYSTEM = (s3: STUDENT(3) || s2: STUDENT(2) || t: TECHNICIAN || {s3, s2, t} :: PRINTER).
-
-```
-
-Implemented for the coursework of the module: _Concurrent Programming (6SENG002W)_ in 2018, at Informatics Institute of Technology (IIT), Sri Lanka, in collaboration with University of Westminster.
-
-Author: Senthuran Ambalavanar ([github.com/senthuran16](https://github.com/senthuran16))
