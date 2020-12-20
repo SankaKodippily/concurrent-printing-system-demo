@@ -3,8 +3,8 @@
 Demonstration of a concurrent printing system, that has several students that share a printer to print documents, and two technicians that refill it with paper and toner cartridges.
 
 Contents:
-* Java Code [PrintingSystem](src/PrintingSystem.java)
-* FSP Processes ([`Printer.lts`](Printer.lts))
+* [Java Code](src)
+* [FSP Processes](Printer.lts)
 
 The Java code for demonstration uses Re-entrant Locks. [PrintingSystem](src/PrintingSystem.java) class has the main method, which can be used to run the demo.
 
