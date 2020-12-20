@@ -6,7 +6,7 @@ Contents:
 * [Java Code](src)
 * [FSP Processes](Printer.lts)
 
-The Java code for demonstration uses Re-entrant Locks. [PrintingSystem](src/PrintingSystem.java) class has the main method, which can be used to run the demo.
+The Java code uses Re-entrant Locks. [PrintingSystem](src/PrintingSystem.java) class has the main method, which can be used to run the demo.
 
 The corresponding FSP processes are as follows: 
 
